@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "IranSans";
+  font-family: "belgant-aesthetic.otf";
   src: url("../fonts/IRYekan.woff");
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@ body {
 * {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #150531 #f36b31;
+  scrollbar-color: #faf0ca#ff1654;
 }
 
 *::-webkit-scrollbar {
@@ -53,26 +53,26 @@ input::-webkit-inner-spin-button {
   height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #f36b31;
+  background: #faf0ca;
   border: 0px none #ffffff;
   border-radius: 86px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b5179e;
+  background: #a0000b;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #b5179e;
+  background: #a0000b;
 }
 ::-webkit-scrollbar-track {
-  background: #150531;
+  background: #ff1654;
   border: 0px none #ffffff;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-track:hover {
-  background: #150531;
+  background: #faf0ca;
 }
 ::-webkit-scrollbar-track:active {
-  background: #150531;
+  background: #faf0ca;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;

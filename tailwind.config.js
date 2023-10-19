@@ -61,7 +61,7 @@ module.exports = {
     },
     colors: {
       // Build your palette here
-      mainWhite: "#F9F9FA",
+      mainWhite: "#faf0ca",
       transparent: "transparent",
       current: "currentColor",
       mainPurple: "#3F008D",
@@ -72,7 +72,7 @@ module.exports = {
       // mainBrown: "#170800",
       mainYellow: "#fdbe39",
       mainOrange: "#fb6107",
-      mainPink: "#D9065A",
+      mainPink: "#f72585",
       // darkPurple: "#240046",
       goldie: "#ff9e00",
       white: colors.white,

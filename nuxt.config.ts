@@ -1,10 +1,13 @@
 export default defineNuxtConfig({
-  //  gsap: {
-  //   extraPlugins: {
-  //     scrollTrigger: true,
-  //     motionPath: true,
-  //   },
-  // },
+  modules: ["@hypernym/nuxt-gsap"],
+
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true,
+      motionPath: true,
+    },
+  },
+
   pages: true,
   css: ["~/assets/css/main.css"],
   // build: {
