@@ -73,6 +73,8 @@ module.exports = {
       mainYellow: "#fdbe39",
       mainOrange: "#fb6107",
       mainPink: "#f72585",
+      mainGreen: "#53db7c",
+
       // darkPurple: "#240046",
       goldie: "#ff9e00",
       white: colors.white,

@@ -2,10 +2,10 @@
   <div class="h-full w-screen bg-mainWhite">
     <Navbar />
     <div
-      class="h-auto mb-28 w-full flex items-center justify-center pt-32 px-72"
+      class="h-auto mb-10 w-full flex items-center justify-center pt-20 px-72"
     >
       <div
-        class="w-full flex flex-col items-start h-full bg-mainWhite rounded-md"
+        class="w-full flex text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
       >
         <h2
           :onmouseleave="endAnimation"
@@ -18,6 +18,91 @@
           <h2 class="text-7xl italic We">We Are</h2>
           <h2 class="text-8xl Acapulco">Acapulco Crew</h2>
         </div>
+      </div>
+    </div>
+    <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
+      <h1 class="bg-mainGreen p-3 text-6xl text-darkPurple">
+        We are a Creative Team with an Eye for
+        <span class="Acapulco">Color</span>
+      </h1>
+      <h1 class="p-3 text-5xl text-darkPurple">
+        Our team consists of two
+        <span class="text-mainPurple">FullStack Developers</span> and a
+        <span class="text-mainRed">Digital Artist</span>
+      </h1>
+    </div>
+    <div
+      class="h-auto mt-5 lg:h-dialog w-screen text-center space-y-6 mb-7 p-5 flex flex-col lg:flex-row justify-around lg:align-start align-center"
+    >
+      <div
+        class="flex flex-col KeslerDiv h-1/3 justify-center align-center space-y-2"
+      >
+        <a
+          href="https://instagram.com/famousKesler/"
+          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+        >
+          <img
+            class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
+            src="../assets/images/Kesler.webp"
+            alt=""
+          />
+          <h1
+            class="font-mainFont font-black text-3xl lg:text-5xl text-mainBlue"
+          >
+            Kesler
+          </h1>
+          <h3
+            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+          >
+            Digital Artist
+          </h3>
+        </a>
+      </div>
+      <div
+        class="flex flex-col ChaoDiv h-1/3 justify-center align-center space-y-2"
+      >
+        <a
+          href="https://instagram.com/comanchechao/"
+          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+        >
+          <img
+            class="w-72 object-contain Chao cursor-pointer"
+            src="../assets/images/Chao.webp"
+            alt=""
+          />
+          <h1
+            class="font-mainFont font-black text-3xl lg:text-5xl text-mainBlue"
+          >
+            Chao
+          </h1>
+          <h3
+            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+          >
+            FullStack Developer
+          </h3>
+        </a>
+      </div>
+      <div class="flex flex-col GreezDiv h-1/3 justify-center align-center">
+        <a
+          href="https://instagram.com/just_greez"
+          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+        >
+          <img
+            class="w-72 object-contain Greez cursor-pointer"
+            src="../assets/images/Greez.webp"
+            alt=""
+          />
+          <h1
+            class="font-mainFont font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+          >
+            Greez
+          </h1>
+          <h3
+            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+          >
+            FullStack Developer
+          </h3>
+        </a>
       </div>
     </div>
     <div
@@ -131,5 +216,38 @@ onMounted(() => {
   to {
     background-position: 200% center;
   }
+}
+.KeslerDiv:hover {
+  cursor: pointer;
+  filter: drop-shadow(1.8);
+  filter: brightness(0.6);
+  transition: ease-in-out 0.3s;
+}
+.KeslerDiv:active {
+  filter: brightness(1.2);
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+}
+.ChaoDiv:hover {
+  cursor: pointer;
+  filter: drop-shadow(1.8);
+  filter: brightness(0.6);
+  transition: ease-in-out 0.3s;
+}
+.ChaoDiv:active {
+  filter: brightness(1.2);
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+}
+.GreezDiv:hover {
+  cursor: pointer;
+  filter: drop-shadow(1.8);
+  filter: brightness(0.6);
+  transition: ease-in-out 0.3s;
+}
+.GreezDiv:active {
+  filter: brightness(1.2);
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
 }
 </style>

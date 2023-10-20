@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-44 w-screen bg-mainWhite flex items-center justify-around space-x-9 px-10"
+    class="h-32 w-screen bg-mainWhite flex items-center justify-around space-x-9 px-10"
   >
     <div class="flex items-center space-x-9">
       <LazyMButton class="Navbar opacity-0">
