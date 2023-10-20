@@ -1,22 +1,48 @@
 <template>
   <div class="h-full w-screen bg-mainWhite">
     <Navbar />
-    <div class="h-screen w-full flex items-center justify-center py-32 px-72">
+    <div
+      class="h-auto mb-28 w-full flex items-center justify-center pt-32 px-72"
+    >
       <div
         class="w-full flex flex-col items-start h-full bg-mainWhite rounded-md"
       >
         <h2
           :onmouseleave="endAnimation"
           :onmouseover="startAnimation"
-          class="text-8xl italic Hi cursor-pointer"
+          class="text-7xl italic Hi cursor-pointer"
         >
           Hi!
         </h2>
         <div class="flex items-center space-x-6">
-          <h2 class="text-8xl italic We">We Are</h2>
+          <h2 class="text-7xl italic We">We Are</h2>
           <h2 class="text-8xl Acapulco">Acapulco Crew</h2>
         </div>
       </div>
+    </div>
+    <div
+      class="relative flex h-screen w-screen justify-center items-center NavbarTrigger logo"
+    >
+      <img
+        class="absolute thirdPic object-contain w-96"
+        src="../assets/images/logo-second.webp"
+        alt=""
+      />
+      <img
+        class="absolute firstPic object-contain w-96"
+        src="../assets/images/logo-third.webp"
+        alt=""
+      />
+      <img
+        class="absolute secondPic object-contain w-96"
+        src="../assets/images/logo-forth.webp"
+        alt=""
+      />
+      <img
+        class="absolute forthPic object-contain w-96"
+        src="../assets/images/logo-first.webp"
+        alt=""
+      />
     </div>
   </div>
 </template>
@@ -54,11 +80,33 @@ onMounted(() => {
     ease: "Linear.easeNone",
     duration: 0.5,
   });
+
+  gsap.from(".logo", {
+    rotation: 360 * 7,
+    duration: 0.2,
+    ease: "expo.out",
+    scrollTrigger: {
+      start: "top top",
+      end: "+=8000",
+      scrub: 0.2,
+      trigger: ".panelContainer",
+    },
+  });
 });
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "Oxygen";
+  src: url("../assets/fonts/ThunderDemo.ttf");
+  font-style: normal;
+  font-display: swap;
+
+  /* unicode-range: U+0020-007F; */
+}
+
 .Acapulco {
+  font-family: "Oxygen";
   background-image: repeating-linear-gradient(
     to left,
     #f01197 0%,
