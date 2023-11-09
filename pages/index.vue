@@ -5,7 +5,7 @@
       class="h-auto mb-10 w-full flex items-center justify-center pt-20 px-72"
     >
       <div
-        class="w-full flex text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
+        class="w-full flex panelContainer text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
       >
         <h2
           :onmouseleave="endAnimation"
@@ -108,7 +108,7 @@
       </div>
     </div>
     <div
-      class="relative flex h-44 mt-12 w-screen panelContainer justify-center items-center NavbarTrigger logo"
+      class="relative flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
     >
       <img
         class="absolute thirdPic object-contain w-44"
