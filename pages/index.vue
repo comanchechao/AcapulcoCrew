@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-screen bg-mainWhite">
+  <div class="h-full w-screen bg-mainWhite overflow-hidden">
     <Navbar />
     <div
       class="h-auto mb-10 w-full flex items-center justify-center pt-20 px-72"
@@ -14,9 +14,9 @@
         >
           Hi!
         </h2>
-        <div class="flex items-center space-x-6">
+        <div class="flex lg:flex-row flex-col items-center lg:space-x-6">
           <h2 class="text-7xl italic We">We Are</h2>
-          <h2 class="text-8xl Acapulco">Acapulco Crew</h2>
+          <h2 class="text-8xl Acapulco text-center">Acapulco Crew</h2>
         </div>
       </div>
     </div>
@@ -32,14 +32,14 @@
       </h1>
     </div>
     <div
-      class="h-auto mt-5 lg:h-dialog w-screen text-center space-y-6 mb-7 p-5 flex flex-col lg:flex-row justify-around lg:align-start align-center"
+      class="flex h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
     >
       <div
-        class="flex flex-col KeslerDiv h-1/3 justify-center align-center space-y-2"
+        class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
       >
         <a
           href="https://instagram.com/famousKesler/"
-          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
         >
           <img
             class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
@@ -59,11 +59,11 @@
         </a>
       </div>
       <div
-        class="flex flex-col ChaoDiv h-1/3 justify-center align-center space-y-2"
+        class="flex flex-col ChaoDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
       >
         <a
           href="https://instagram.com/comanchechao/"
-          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
         >
           <img
             class="w-72 object-contain Chao cursor-pointer"
@@ -82,10 +82,12 @@
           </h3>
         </a>
       </div>
-      <div class="flex flex-col GreezDiv h-1/3 justify-center align-center">
+      <div
+        class="flex flex-col GreezDiv w-full lg:w-1/3 h-full justify-center items-center"
+      >
         <a
           href="https://instagram.com/just_greez"
-          class="flex flex-col justify-center align-center space-y-2 lg:space-y-4"
+          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
         >
           <img
             class="w-72 object-contain Greez cursor-pointer"
@@ -106,28 +108,63 @@
       </div>
     </div>
     <div
-      class="relative flex h-screen w-screen justify-center items-center NavbarTrigger logo"
+      class="relative flex h-44 mt-12 w-screen panelContainer justify-center items-center NavbarTrigger logo"
     >
       <img
-        class="absolute thirdPic object-contain w-96"
+        class="absolute thirdPic object-contain w-44"
         src="../assets/images/logo-second.webp"
         alt=""
       />
       <img
-        class="absolute firstPic object-contain w-96"
+        class="absolute firstPic object-contain w-44"
         src="../assets/images/logo-third.webp"
         alt=""
       />
       <img
-        class="absolute secondPic object-contain w-96"
+        class="absolute secondPic object-contain w-44"
         src="../assets/images/logo-forth.webp"
         alt=""
       />
       <img
-        class="absolute forthPic object-contain w-96"
+        class="absolute forthPic object-contain w-44"
         src="../assets/images/logo-first.webp"
         alt=""
       />
+    </div>
+    <div
+      class="flex flex-col items-center h-full w-full my-24 space-y-28 justify-center"
+    >
+      <h2 class="text-8xl Acapulco text-center">Our Work :</h2>
+      <div
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+      >
+        <h2 class="text-6xl w-1/2 text-center font-bold">Acapulco Design</h2>
+        <div class="w-1/2 h-72 bg-mainRed rounded-md"></div>
+      </div>
+      <div
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+      >
+        <div class="w-1/2 h-72 bg-mainGreen rounded-md"></div>
+        <h2 class="text-6xl w-1/2 text-center font-bold">Hocus Pocus</h2>
+      </div>
+      <div
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+      >
+        <h2 class="text-6xl w-1/2 text-center font-bold">Greez EyeWear</h2>
+        <div class="w-1/2 h-72 bg-mainPurple rounded-md"></div>
+      </div>
+      <div
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+      >
+        <div class="w-1/2 h-72 bg-mainYellow rounded-md"></div>
+        <h2 class="text-6xl w-1/2 text-center font-bold">Boutak</h2>
+      </div>
+      <div
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+      >
+        <h2 class="text-6xl w-1/2 text-center font-bold">Punkey Monkey</h2>
+        <div class="w-1/2 h-72 bg-mainPink rounded-md"></div>
+      </div>
     </div>
   </div>
 </template>
