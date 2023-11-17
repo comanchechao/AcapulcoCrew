@@ -1,5 +1,8 @@
 <template>
   <div class="h-full w-screen bg-mainWhite overflow-hidden">
+    <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
+      <img src="../assets/images/Logo.gif" alt="" />
+    </div>
     <Navbar />
     <div
       class="h-auto mb-10 w-full flex items-center justify-center pt-20 px-72"
@@ -21,7 +24,7 @@
       </div>
     </div>
     <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
-      <h1 class="bg-mainGreen p-3 text-6xl text-darkPurple">
+      <h1 class="bg-mainGreen p-3 text-6xl text-darkPurple Creative">
         We are a Creative Team with an Eye for
         <span class="Acapulco">Color</span>
       </h1>
@@ -182,7 +185,9 @@ const endAnimation = () => {
 };
 onMounted(() => {
   const TL = gsap.timeline();
-
+  TL.to(".LoadingDiv", {
+    display: "none",
+  });
   TL.from(".Hi", {
     x: -50,
     opacity: 0,
@@ -202,13 +207,17 @@ onMounted(() => {
     ease: "Linear.easeNone",
     duration: 0.5,
   });
-
+  TL.from(".Creative", {
+    opacity: 0,
+    ease: "Linear.easeNone",
+    duration: 0.5,
+  });
   gsap.from(".logo", {
     rotation: 360 * 7,
     duration: 0.2,
     ease: "expo.out",
     scrollTrigger: {
-      start: "top top",
+      start: "top center",
       end: "+=8000",
       scrub: 0.2,
       trigger: ".panelContainer",
