@@ -89,7 +89,7 @@
         class="flex flex-col GreezDiv w-full lg:w-1/3 h-full justify-center items-center"
       >
         <a
-          href="https://instagram.com/just_greez"
+          href="https://instagram.com/lemon_greez"
           class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
         >
           <img
