@@ -217,7 +217,7 @@ onMounted(() => {
     duration: 0.2,
     ease: "expo.out",
     scrollTrigger: {
-      start: "top center",
+      start: "top bottom",
       end: "+=8000",
       scrub: 0.2,
       trigger: ".panelContainer",
