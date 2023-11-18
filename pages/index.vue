@@ -24,7 +24,9 @@
       </div>
     </div>
     <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
-      <h1 class="bg-mainGreen p-3 text-6xl text-darkPurple Creative">
+      <h1
+        class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
+      >
         We are a Creative Team with an Eye for
         <span class="Acapulco">Color</span>
       </h1>
@@ -98,7 +100,7 @@
             alt=""
           />
           <h1
-            class="font-mainFont font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+            class="font-mainFont OurWorkT font-black my-4 text-3xl lg:text-5xl text-mainBlue"
           >
             Greez
           </h1>
@@ -137,7 +139,7 @@
     <div
       class="flex flex-col items-center h-full w-full my-24 space-y-28 justify-center"
     >
-      <h2 class="text-8xl Acapulco text-center">Our Work :</h2>
+      <h2 class="text-8xl OurWork text-center">Our Work :</h2>
       <div
         class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
       >
@@ -223,6 +225,19 @@ onMounted(() => {
       trigger: ".panelContainer",
     },
   });
+  gsap.from(".OurWork", {
+    opacity: 0,
+    y: 60,
+    duration: 1,
+    ease: "power4.out",
+    scrollTrigger: {
+      trigger: ".OurWork",
+      start: "top top",
+      end: "+=500",
+      markers: true,
+      toggleActions: "play none none reverse",
+    },
+  });
 });
 </script>
 
@@ -262,6 +277,28 @@ onMounted(() => {
   to {
     background-position: 200% center;
   }
+}
+
+.OurWork {
+  font-family: "Oxygen";
+  background-image: repeating-linear-gradient(
+    to left,
+    #f01197 0%,
+    #722ef1 10%,
+
+    #4800f1 15%,
+    #3602f2 29%,
+    #c078f0 67%,
+    #de4b9c 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
 }
 .KeslerDiv:hover {
   cursor: pointer;
