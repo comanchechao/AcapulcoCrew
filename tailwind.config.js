@@ -68,7 +68,7 @@ module.exports = {
       darkPurple: "#150531",
       // mainViolet: "#b5179e",
       mainRed: "#ff1654",
-      // mainBlue: "#1982C4",
+      mainBlue: "#525ffd",
       // mainBrown: "#170800",
       mainYellow: "#fdbe39",
       mainOrange: "#fb6107",
@@ -99,5 +99,5 @@ module.exports = {
       Sky: colors.sky,
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

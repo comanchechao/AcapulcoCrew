@@ -21,5 +21,9 @@
   },
   "engines": {
     "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@phosphor-icons/vue": "^2.1.6",
+    "daisyui": "^4.6.0"
   }
 }

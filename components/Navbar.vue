@@ -1,21 +1,24 @@
 <template>
   <div
-    class="h-32 w-screen bg-mainWhite flex items-center justify-around space-x-9 px-10"
+    class="h-32 w-screen bg-mainWhite flex items-center justify-between px-7 space-x-9 lg:px-10"
   >
-    <div class="flex items-center space-x-9">
-      <LazyMButton class="Navbar opacity-0">
-        <template #Text>Artworks</template> </LazyMButton
-      ><LazyMButton class="Navbar opacity-0">
-        <template #Text>Websites</template>
-      </LazyMButton>
+    <div class="flex items-center lg:w-full justify-around">
+      <div class="lg:flex hidden items-center justify-center space-x9">
+        <LazyMButton class="Navbar opacity-0">
+          <template #Text>Artworks</template> </LazyMButton
+        ><LazyMButton class="Navbar opacity-0">
+          <template #Text>Websites</template>
+        </LazyMButton>
+      </div>
+      <img
+        :onmouseleave="endAnimation"
+        :onmouseover="startAnimation"
+        src="../assets/images/Logo.webp"
+        class="lg:w-24 w-20 object-contain img cursor-pointer Navbar opacity-0"
+        alt=""
+      />
     </div>
-    <img
-      :onmouseleave="endAnimation"
-      :onmouseover="startAnimation"
-      src="../assets/images/Logo.webp"
-      class="w-24 object-contain img cursor-pointer Navbar opacity-0"
-      alt=""
-    />
+    <LazyPhoneNavbar class="lg:hidden flex" />
   </div>
 </template>
 
@@ -42,6 +45,15 @@ onMounted(() => {
 </script>
 
 <style>
+.Button:hover::after {
+  transform: scale(1, 1);
+}
+.Button {
+  position: relative;
+  width: 10rem;
+  padding: 0.5rem 0;
+  transition: all 1s ease-in-out;
+}
 .Button::after {
   content: "";
   position: absolute;
@@ -54,14 +66,5 @@ onMounted(() => {
 .Button::after {
   transform: scale(0, 1);
   transition: transform 0.3s ease-in;
-}
-.Button:hover::after {
-  transform: scale(1, 1);
-}
-.Button {
-  position: relative;
-  width: 10rem;
-  padding: 0.5rem 0;
-  transition: all 1s ease-in-out;
 }
 </style>

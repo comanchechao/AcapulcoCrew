@@ -1,11 +1,11 @@
 <template>
-  <div class="h-full w-screen bg-mainWhite overflow-hidden">
+  <div class="h-full w-screen bg-mainWhite overflow-hidden overflow-x-hidden">
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
     </div>
     <Navbar />
     <div
-      class="h-auto mb-10 w-full flex items-center justify-center pt-20 px-72"
+      class="h-auto mb-10 w-screen flex items-center justify-center pt-20 px-10 lg:px-72"
     >
       <div
         class="w-full flex panelContainer text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
@@ -100,7 +100,7 @@
             alt=""
           />
           <h1
-            class="font-mainFont OurWorkT font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+            class="font-mainFont font-black my-4 text-3xl lg:text-5xl text-mainBlue"
           >
             Greez
           </h1>
@@ -137,38 +137,46 @@
       />
     </div>
     <div
-      class="flex flex-col items-center h-full w-full my-24 space-y-28 justify-center"
+      class="flex flex-col WorkTrigger items-center text-mainBlue h-full w-full my-24 space-y-28 justify-center"
     >
-      <h2 class="text-8xl OurWork text-center">Our Work :</h2>
+      <h2 class="lg:text-8xl text-6xl OurWork text-center">Our Work :</h2>
       <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+        class="h-full w-full flex lg:space-y-0 space-y-6 lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <h2 class="text-6xl w-1/2 text-center font-bold">Acapulco Design</h2>
-        <div class="w-1/2 h-72 bg-mainRed rounded-md"></div>
+        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
+          Acapulco Design
+        </h2>
+        <div class="lg:w-1/2 w-full h-72 bg-mainRed rounded-md"></div>
       </div>
       <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <div class="w-1/2 h-72 bg-mainGreen rounded-md"></div>
-        <h2 class="text-6xl w-1/2 text-center font-bold">Hocus Pocus</h2>
+        <div class="lg:w-1/2 w-full h-72 bg-mainGreen rounded-md"></div>
+        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
+          Hocus Pocus
+        </h2>
       </div>
       <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <h2 class="text-6xl w-1/2 text-center font-bold">Greez EyeWear</h2>
-        <div class="w-1/2 h-72 bg-mainPurple rounded-md"></div>
+        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
+          Greez EyeWear
+        </h2>
+        <div class="lg:w-1/2 w-full h-72 bg-mainPurple rounded-md"></div>
       </div>
       <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <div class="w-1/2 h-72 bg-mainYellow rounded-md"></div>
-        <h2 class="text-6xl w-1/2 text-center font-bold">Boutak</h2>
+        <div class="lg:w-1/2 w-full h-72 bg-mainYellow rounded-md"></div>
+        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">Boutak</h2>
       </div>
       <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around px-24 my-10"
+        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <h2 class="text-6xl w-1/2 text-center font-bold">Punkey Monkey</h2>
-        <div class="w-1/2 h-72 bg-mainPink rounded-md"></div>
+        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
+          Punkey Monkey
+        </h2>
+        <div class="lg:w-1/2 w-full h-72 bg-mainPink rounded-md"></div>
       </div>
     </div>
   </div>
@@ -225,19 +233,19 @@ onMounted(() => {
       trigger: ".panelContainer",
     },
   });
-  gsap.from(".OurWork", {
-    opacity: 0,
-    y: 60,
-    duration: 1,
-    ease: "power4.out",
-    scrollTrigger: {
-      trigger: ".OurWork",
-      start: "top top",
-      end: "+=500",
-      markers: true,
-      toggleActions: "play none none reverse",
-    },
-  });
+  // gsap.from(".OurWork", {
+  //   opacity: 0,
+  //   y: 60,
+  //   duration: 1,
+  //   ease: "power4.out",
+  //   scrollTrigger: {
+  //     trigger: ".WorkTrigger",
+  //     start: "bottom top",
+  //     markers: true,
+  //     end: "+=500",
+  //     toggleActions: "play none none reverse",
+  //   },
+  // });
 });
 </script>
 
