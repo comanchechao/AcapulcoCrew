@@ -27,7 +27,6 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { initFlowbite } from "flowbite";
 import { PhList } from "@phosphor-icons/vue";
 
 const { $gsap } = useNuxtApp();
@@ -40,7 +39,6 @@ const endAnimation = () => {
 };
 
 onMounted(() => {
-  initFlowbite();
   TM.to(".Navbar", {
     opacity: 1,
     ease: "Linear.easeNone",
