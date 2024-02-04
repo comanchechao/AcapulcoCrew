@@ -1,4 +1,9 @@
 <template>
+  <head>
+    <title>Acapulco Crew | Creative Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
   <div class="h-full w-screen bg-mainWhite overflow-hidden overflow-x-hidden">
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
@@ -28,12 +33,13 @@
         class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
       >
         We are a Creative Team with an Eye for
-        <span class="Acapulco">Color</span>
+        <span class="OurWork">Color</span>
       </h1>
       <h1 class="p-3 text-5xl text-darkPurple">
         Our team consists of two
-        <span class="text-mainPurple">FullStack Developers</span> and a
-        <span class="text-mainRed">Digital Artist</span>
+        <span class="text-mainPurple underline">FullStack Developers</span> and
+        a
+        <span class="text-mainPurple underline">Digital Artist</span>
       </h1>
     </div>
     <div
@@ -51,13 +57,11 @@
             src="../assets/images/Kesler.webp"
             alt=""
           />
-          <h1
-            class="font-mainFont font-black text-3xl lg:text-5xl text-mainBlue"
-          >
+          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
             Kesler
           </h1>
           <h3
-            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
           >
             Digital Artist
           </h3>
@@ -75,13 +79,11 @@
             src="../assets/images/Chao.webp"
             alt=""
           />
-          <h1
-            class="font-mainFont font-black text-3xl lg:text-5xl text-mainBlue"
-          >
+          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
             Chao
           </h1>
           <h3
-            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
           >
             FullStack Developer
           </h3>
@@ -100,12 +102,12 @@
             alt=""
           />
           <h1
-            class="font-mainFont font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+            class="Acapulco font-black my-4 text-3xl lg:text-5xl text-mainBlue"
           >
             Greez
           </h1>
           <h3
-            class="font-mainFont font-extralight text-3xl lg:text-4xl text-mainPurple"
+            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
           >
             FullStack Developer
           </h3>
@@ -137,7 +139,7 @@
       />
     </div>
     <div
-      class="flex flex-col WorkTrigger items-center text-mainBlue h-full w-full my-24 space-y-28 justify-center"
+      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-24 space-y-28 justify-center"
     >
       <h2 class="lg:text-8xl text-6xl OurWork text-center">Our Work :</h2>
       <div
@@ -146,7 +148,11 @@
         <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
           Acapulco Design
         </h2>
-        <div class="lg:w-1/2 w-full h-72 bg-mainRed rounded-md"></div>
+        <div
+          class="lg:w-1/2 w-full h-72 flex items-center justify-center bg-mainRed rounded-md"
+        >
+          <img src="../assets/images/Logo.gif" alt="" />
+        </div>
       </div>
       <div
         class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
@@ -249,9 +255,17 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style>
 @font-face {
   font-family: "Oxygen";
+  src: url("../assets/fonts/psycharegular-yq334.otf");
+  font-style: normal;
+  font-display: swap;
+
+  /* unicode-range: U+0020-007F; */
+}
+@font-face {
+  font-family: "OXY";
   src: url("../assets/fonts/ThunderDemo.ttf");
   font-style: normal;
   font-display: swap;
@@ -260,7 +274,7 @@ onMounted(() => {
 }
 
 .Acapulco {
-  font-family: "Oxygen";
+  font-family: "OXY";
   background-image: repeating-linear-gradient(
     to left,
     #f01197 0%,

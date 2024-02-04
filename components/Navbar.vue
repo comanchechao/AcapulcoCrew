@@ -4,9 +4,26 @@
   >
     <div class="flex items-center lg:w-full justify-around">
       <div class="lg:flex hidden items-center justify-center space-x9">
+        <div class="dropdown dropdown-hover Navbar opacity-0">
+          <div
+            tabindex="0"
+            role="button"
+            class="text-2xl flex items-center justify-center cursor-pointer pb-1 text-gray-900 Button border-b-4 rounded-md border-transparent transition-all ease-linear duration-150 hover:border-mainPink"
+          >
+            <span>Artworks</span>
+            <PhCaretDown size="25" weight="fill" />
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
+          >
+            <li><a>NFTs</a></li>
+
+            <li><a>Wall Graffiti</a></li>
+            <li><a>Digital Paintings</a></li>
+          </ul>
+        </div>
         <LazyMButton class="Navbar opacity-0">
-          <template #Text>Artworks</template> </LazyMButton
-        ><LazyMButton class="Navbar opacity-0">
           <template #Text>Websites</template>
         </LazyMButton>
       </div>
@@ -23,6 +40,7 @@
 </template>
 
 <script setup>
+import { PhCaretDown } from "@phosphor-icons/vue";
 import { onMounted } from "vue";
 
 const { $gsap } = useNuxtApp();
