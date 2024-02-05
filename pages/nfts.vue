@@ -8,7 +8,25 @@
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
     </div>
-    <Navbar />
+    <div class="w-screen h-24 py-16 px-24 flex items-center justify-between">
+      <NuxtLink to="/">
+        <PhCaretCircleLeft
+          class="bg-mainGreen cursor-pointer text-mainWhite hover:text-mainPurple active:text-mainGreen transition duration-300 ease-linear hover:bg-mainWhite rounded-full"
+          size="55"
+        />
+      </NuxtLink>
+      <div
+        class="img"
+        :onmouseover="startAnimation1"
+        :onmouseleave="endAnimation1"
+      >
+        <img
+          src="../assets/images/Logo.webp"
+          class="lg:w-24 w-20 object-contain cursor-pointer"
+          alt=""
+        />
+      </div>
+    </div>
     <div
       class="h-auto mb-10 w-screen flex items-center justify-center pt-20 px-10 lg:px-72"
     >
@@ -18,100 +36,56 @@
         <h2
           :onmouseleave="endAnimation"
           :onmouseover="startAnimation"
-          class="text-7xl italic Hi cursor-pointer"
+          class="text-4xl mb-4 italic Hi cursor-pointer"
         >
-          Hi,
+          Introducing
         </h2>
         <div class="flex lg:flex-row flex-col items-center lg:space-x-6">
-          <h2 class="text-7xl italic We">We Are</h2>
-          <h2 class="text-8xl Acapulco text-center">Acapulco Crew</h2>
+          <h2 class="text-9xl Acapulco text-center">Acapulco Monkeys</h2>
         </div>
       </div>
     </div>
-    <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
+    <div class="w-full h-auto p-2 flex items-center flex-col justify-center">
       <h1
-        class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
+        class="bg-mainGreen flex items-center justify-center space-x-2 w-full text-center p-3 text-4xl text-darkPurple Creative"
       >
-        We are a Creative Team with an Eye for
-        <span class="OurWork">Color</span>
-      </h1>
-      <h1 class="p-3 text-5xl text-darkPurple">
-        Our team consists of two
-        <span class="text-mainPurple underline">FullStack Developers</span> and
-        a
-        <span class="text-mainPurple underline">Digital Artist</span>
+        <span> Acapulco Monkeys is a NFT project based on </span>
+        <span class="flex items-center space-x-2"
+          ><span>SOLANA</span>
+          <img
+            src="../assets/images/SOL.webp"
+            class="object-contain w-10"
+            alt=""
+        /></span>
       </h1>
     </div>
     <div
-      class="flex h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+      class="flex h-screen lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
     >
       <div
-        class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
+        class="h-full py-16 pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
       >
-        <a
-          href="https://instagram.com/famousKesler/"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
-            src="../assets/images/Kesler.webp"
-            alt=""
-          />
-          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
-            Kesler
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            Digital Artist
-          </h3>
-        </a>
+        <h1 class="p-3 text-4xl text-darkPurple">
+          Dive into the Tropics🌴 with Acapulco Monkeys: Your Solana Powered NFT
+          Gateway
+        </h1>
+        <h2 class="p-3 text-xl text-darkPurple">
+          Get ready to unleash your inner primate with Acapulco Monkeys, a
+          vibrant NFT collection on the Solana blockchain.
+        </h2>
+        <h2 class="p-3 text-xl text-darkPurple">
+          Immerse yourself in a world of cheeky charm and exclusive perks, all
+          while rocking a unique simian avatar. Join the troop and unlock
+          exciting experiences, from community events to exclusive merchandise –
+          the jungle awaits.
+        </h2>
       </div>
-      <div
-        class="flex flex-col ChaoDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
-      >
-        <a
-          href="https://instagram.com/comanchechao/"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Chao cursor-pointer"
-            src="../assets/images/Chao.webp"
-            alt=""
-          />
-          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
-            Chao
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            FullStack Developer
-          </h3>
-        </a>
-      </div>
-      <div
-        class="flex flex-col GreezDiv w-full lg:w-1/3 h-full justify-center items-center"
-      >
-        <a
-          href="https://instagram.com/lemon_greez"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Greez cursor-pointer"
-            src="../assets/images/Greez.webp"
-            alt=""
-          />
-          <h1
-            class="Acapulco font-black my-4 text-3xl lg:text-5xl text-mainBlue"
-          >
-            Greez
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            FullStack Developer
-          </h3>
-        </a>
+      <div class="h-full lg:w-1/2 w-full flex py-16 items-start justify-center">
+        <img
+          src="../assets/images/SHIRTS.webp"
+          class="h-dialog object-contain"
+          alt=""
+        />
       </div>
     </div>
     <div
@@ -189,10 +163,17 @@
 </template>
 
 <script setup>
+import { PhCaretCircleLeft } from "@phosphor-icons/vue";
+
 import { gsap } from "gsap";
 
 import { onMounted } from "vue";
-
+const startAnimation1 = () => {
+  gsap.to(".img", { rotation: 360, ease: "Linear.easeNone", duration: 0.2 });
+};
+const endAnimation1 = () => {
+  gsap.to(".img", { rotation: 0, ease: "Linear.easeNone", duration: 0.2 });
+};
 const startAnimation = () => {
   gsap.to(".Hi", { x: 27, ease: "Linear.easeNone", duration: 0.2 });
 };

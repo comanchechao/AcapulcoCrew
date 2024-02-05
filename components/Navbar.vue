@@ -17,7 +17,7 @@
             tabindex="0"
             class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
           >
-            <li><a>NFTs</a></li>
+            <li><NuxtLink to="/nfts">NFTs</NuxtLink></li>
 
             <li><a>Wall Graffiti</a></li>
             <li><a>Digital Paintings</a></li>
