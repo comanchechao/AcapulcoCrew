@@ -57,7 +57,7 @@
             class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
           >
             <li>
-              <NuxtLink to="/nfts/acaplcoKoalas">Acapulco Koalas</NuxtLink>
+              <NuxtLink to="/nfts/acapulcoKoalas">Acapulco Koalas</NuxtLink>
             </li>
 
             <li>
