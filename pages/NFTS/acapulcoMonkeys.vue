@@ -8,7 +8,7 @@
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
     </div>
-    <div class="w-screen h-24 py-16 px-24 flex items-center justify-between">
+    <div class="w-screen h-28 Back px-24 flex items-center justify-between">
       <NuxtLink to="/">
         <PhCaretCircleLeft
           class="bg-mainGreen cursor-pointer text-mainWhite hover:text-mainPurple active:text-mainGreen transition duration-300 ease-linear hover:bg-mainWhite rounded-full"
@@ -21,14 +21,14 @@
         :onmouseleave="endAnimation1"
       >
         <img
-          src="../assets/images/Logo.webp"
+          src="../../assets/images/Logo.webp"
           class="lg:w-24 w-20 object-contain cursor-pointer"
           alt=""
         />
       </div>
     </div>
     <div
-      class="h-auto mb-10 w-screen flex items-center justify-center pt-20 px-10 lg:px-72"
+      class="h-auto mb-10 w-screen flex items-center justify-center px-10 lg:px-72"
     >
       <div
         class="w-full flex panelContainer text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
@@ -185,18 +185,24 @@ onMounted(() => {
   TL.to(".LoadingDiv", {
     display: "none",
   });
+  TL.from(".Back", {
+    opacity: 0,
+    ease: "Linear.easeNone",
+    duration: 0.6,
+    delay: 0.7,
+  });
   TL.from(".Hi", {
     x: -50,
     opacity: 0,
     ease: "Linear.easeNone",
     duration: 0.6,
-    delay: 1.6,
+    delay: 0.2,
   });
   TL.from(".We", {
     x: -50,
     opacity: 0,
     ease: "Linear.easeNone",
-    duration: 0.5,
+    duration: 0.3,
   });
   TL.from(".Acapulco", {
     y: 50,

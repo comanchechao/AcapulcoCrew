@@ -18,8 +18,49 @@
       ></label>
       <ul class="menu p-4 w-80 min-h-full bg-mainWhite text-base-content">
         <!-- Sidebar content here -->
-        <li><a>Sidebar Item 1</a></li>
-        <li><a>Sidebar Item 2</a></li>
+        <LazyMButton class=" ">
+          <template #Text>
+            <span class="flex space-x-2 items-center justify-center">
+              <span>Websites</span>
+              <PhLaptop size="25" :weight="fill" />
+            </span>
+          </template>
+        </LazyMButton>
+        <div class="dropdown dropdown-hover">
+          <div
+            tabindex="0"
+            role="button"
+            class="text-2xl flex items-center justify-center cursor-pointer pb-1 text-gray-900 Button border-b-4 rounded-md border-transparent transition-all ease-linear duration-150 hover:border-mainPink"
+          >
+            <span>Artworks</span>
+            <PhCaretDown size="25" weight="fill" />
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
+          >
+            <li><a>Wall Graffiti</a></li>
+            <li><a>Digital Paintings</a></li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-hover">
+          <div
+            tabindex="0"
+            role="button"
+            class="text-2xl flex items-center justify-center cursor-pointer pb-1 text-gray-900 Button border-b-4 rounded-md border-transparent transition-all ease-linear duration-150 hover:border-mainPink"
+          >
+            <span>NFTs</span>
+            <PhCaretDown size="25" weight="fill" />
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
+          >
+            <li><NuxtLink to="/nfts/koalas">Acapulco Koalas</NuxtLink></li>
+
+            <li><NuxtLink to="/nfts/monkeys">Acapulco Koalas</NuxtLink></li>
+          </ul>
+        </div>
       </ul>
     </div>
   </div>
@@ -27,7 +68,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { PhList } from "@phosphor-icons/vue";
+import { PhLaptop, PhList, PhCaretDown } from "@phosphor-icons/vue";
 
 const { $gsap } = useNuxtApp();
 const TM = $gsap.timeline({ paused: false });

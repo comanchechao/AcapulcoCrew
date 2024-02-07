@@ -3,7 +3,29 @@
     class="h-32 w-screen bg-mainWhite flex items-center justify-between px-7 space-x-9 lg:px-10"
   >
     <div class="flex items-center lg:w-full justify-around">
-      <div class="lg:flex hidden items-center justify-center space-x9">
+      <div class="lg:flex hidden items-center justify-center space-x-9">
+        <div class="dropdown dropdown-hover Navbar opacity-0">
+          <div
+            tabindex="0"
+            role="button"
+            class="text-2xl flex items-center justify-center cursor-pointer pb-1 text-gray-900 Button border-b-4 rounded-md border-transparent transition-all ease-linear duration-150 hover:border-mainPink"
+          >
+            <span>NFTs</span>
+            <PhCaretDown size="25" weight="fill" />
+          </div>
+          <ul
+            tabindex="0"
+            class="dropdown-content z-[1] menu text-lg border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
+          >
+            <li>
+              <NuxtLink to="/nfts/acapulcoKoalas">Acapulco Koalas</NuxtLink>
+            </li>
+
+            <li>
+              <NuxtLink to="/nfts/acapulcoMonkeys">Acapulco Monkeys</NuxtLink>
+            </li>
+          </ul>
+        </div>
         <div class="dropdown dropdown-hover Navbar opacity-0">
           <div
             tabindex="0"
@@ -17,8 +39,6 @@
             tabindex="0"
             class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
           >
-            <li><NuxtLink to="/nfts">NFTs</NuxtLink></li>
-
             <li><a>Wall Graffiti</a></li>
             <li><a>Digital Paintings</a></li>
           </ul>
@@ -57,7 +77,8 @@ onMounted(() => {
     opacity: 1,
     ease: "Linear.easeNone",
     duration: 0.7,
-    stagger: 0.4,
+    stagger: 0.2,
+    delay: 0.5,
   });
 });
 </script>

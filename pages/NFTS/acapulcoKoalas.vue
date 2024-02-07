@@ -4,116 +4,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
   </head>
-  <div class="h-full w-screen bg-mainWhite overflow-hidden overflow-x-hidden">
+  <div class="h-full w-screen bg-mainBlack overflow-hidden overflow-x-hidden">
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
     </div>
-    <Navbar />
+    <div class="w-screen Back h-24 px-24 flex items-center justify-between">
+      <NuxtLink to="/">
+        <PhCaretCircleLeft
+          class="bg-mainYellow cursor-pointer text-mainBlack hover:text-mainYellow active:text-mainYellow transition duration-300 hover:bg-transparent ease-linear rounded-full"
+          size="55"
+        />
+      </NuxtLink>
+      <div
+        class="img"
+        :onmouseover="startAnimation1"
+        :onmouseleave="endAnimation1"
+      >
+        <img
+          src="../assets/images/Logo.webp"
+          class="lg:w-24 w-20 object-contain cursor-pointer"
+          alt=""
+        />
+      </div>
+    </div>
     <div
-      class="h-auto mb-10 w-screen flex items-center justify-center pt-20 md:px-64 px-10 lg:px-72"
+      class="h-auto mb-10 w-screen flex items-center justify-center px-10 lg:px-72"
     >
       <div
-        class="w-full flex panelContainer text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
+        class="w-full flex panelContainer text-mainWhite flex-col items-center h-full rounded-md"
       >
         <h2
           :onmouseleave="endAnimation"
           :onmouseover="startAnimation"
-          class="text-7xl italic Hi cursor-pointer"
+          class="text-4xl mb-4 italic Hi cursor-pointer"
         >
-          Hi,
+          Introducing
         </h2>
-        <div
-          class="flex lg:flex-row flex-col md:flex-col items-center lg:space-x-6"
-        >
-          <h2 class="text-7xl italic We">We Are</h2>
-          <h2 class="text-8xl Acapulco text-center">Acapulco Crew</h2>
+        <div class="flex lg:flex-row flex-col items-center lg:space-x-6">
+          <h2 class="text-9xl Koala text-center">Acapulco Koalas</h2>
         </div>
       </div>
     </div>
-    <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
+    <div class="w-full h-auto p-2 flex items-center flex-col justify-center">
       <h1
-        class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
+        class="bg-mainYellow lg:flex-row flex-col flex items-center justify-center lg:space-y-0 space-y-4 lg:space-x-2 w-full text-center p-3 text-4xl text-darkPurple Creative"
       >
-        We are a Creative Team with an Eye for
-        <span class="OurWork">Color</span>
-      </h1>
-      <h1 class="p-3 text-5xl text-darkPurple">
-        Our team consists of two
-        <span class="text-mainPurple underline">FullStack Developers</span> and
-        a
-        <span class="text-mainPurple underline">Digital Artist</span>
+        <span> Acapulco Monkeys is a NFT project based on </span>
+        <span class="flex items-center space-x-2"
+          ><span>SOLANA</span>
+          <img
+            src="../../assets/images/SOL.webp"
+            class="object-contain w-10"
+            alt=""
+        /></span>
       </h1>
     </div>
     <div
-      class="flex h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+      class="flex h-auto lg:h-screen lg:px-20 text-mainWhite lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
     >
       <div
-        class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
+        class="h-full py-16 px-12 lg:pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
       >
-        <a
-          href="https://instagram.com/famousKesler/"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
-            src="../assets/images/Kesler.webp"
-            alt=""
-          />
-          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
-            Kesler
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            Digital Artist
-          </h3>
-        </a>
+        <h1 class="p-3 text-4xl">
+          Dive into the Chilled Oasis of Acapulco Koalas on Solana
+        </h1>
+        <h2 class="p-3 text-xl">
+          Get ready to hang ten with the coolest koalas on the blockchain!
+          Acapulco Koalas is an exclusive NFT collection bringing beach vibes
+          and laid-back charm to the Solana ecosystem.
+        </h2>
+        <h2 class="p-3 text-xl">
+          Rarity and Utility: Each NFT unlocks exclusive experiences, airdrops,
+          and voting rights within the community. Chill Community: Connect with
+          fellow koala enthusiasts, participate in events, and soak up the good
+          vibes. Solana Advantage: Built on the blazing-fast Solana blockchain,
+          ensuring low fees and seamless transactions.
+        </h2>
+        <h2 class="p-3 text-xl">
+          Mellow out with the Acapulco Koalas and join the wave of NFT coolness!
+          ‍♂️
+        </h2>
       </div>
-      <div
-        class="flex flex-col ChaoDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
-      >
-        <a
-          href="https://instagram.com/comanchechao/"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Chao cursor-pointer"
-            src="../assets/images/Chao.webp"
-            alt=""
-          />
-          <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
-            Chao
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            FullStack Developer
-          </h3>
-        </a>
-      </div>
-      <div
-        class="flex flex-col GreezDiv w-full lg:w-1/3 h-full justify-center items-center"
-      >
-        <a
-          href="https://instagram.com/lemon_greez"
-          class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
-        >
-          <img
-            class="w-72 object-contain Greez cursor-pointer"
-            src="../assets/images/Greez.webp"
-            alt=""
-          />
-          <h1
-            class="Acapulco font-black my-4 text-3xl lg:text-5xl text-mainBlue"
-          >
-            Greez
-          </h1>
-          <h3
-            class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
-          >
-            FullStack Developer
-          </h3>
-        </a>
+      <div class="h-full lg:w-1/2 w-full flex py-16 items-start justify-center">
+        <img
+          src="../assets/images/SHIRTS.webp"
+          class="h-dialog object-contain"
+          alt=""
+        />
       </div>
     </div>
     <div
@@ -159,7 +136,7 @@
       <div
         class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
       >
-        <div class="lg:w-1/2 w-full h-72 bg-mainGreen rounded-md"></div>
+        <div class="lg:w-1/2 w-full h-72 bg-mainYellow rounded-md"></div>
         <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
           Hocus Pocus
         </h2>
@@ -191,10 +168,17 @@
 </template>
 
 <script setup>
+import { PhCaretCircleLeft } from "@phosphor-icons/vue";
+
 import { gsap } from "gsap";
 
 import { onMounted } from "vue";
-
+const startAnimation1 = () => {
+  gsap.to(".img", { rotation: 360, ease: "Linear.easeNone", duration: 0.2 });
+};
+const endAnimation1 = () => {
+  gsap.to(".img", { rotation: 0, ease: "Linear.easeNone", duration: 0.2 });
+};
 const startAnimation = () => {
   gsap.to(".Hi", { x: 27, ease: "Linear.easeNone", duration: 0.2 });
 };
@@ -206,20 +190,21 @@ onMounted(() => {
   TL.to(".LoadingDiv", {
     display: "none",
   });
-  TL.from(".Hi", {
+  TL.from(".Back", {
     x: -50,
     opacity: 0,
     ease: "Linear.easeNone",
-    duration: 0.6,
-    delay: 1.6,
+    duration: 0.5,
+    delay: 1,
   });
-  TL.from(".We", {
+  TL.from(".Hi", {
     x: -50,
     opacity: 0,
     ease: "Linear.easeNone",
     duration: 0.5,
   });
-  TL.from(".Acapulco", {
+
+  TL.from(".Koala", {
     y: 50,
     opacity: 0,
     ease: "Linear.easeNone",
@@ -257,35 +242,27 @@ onMounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
 @font-face {
-  font-family: "Oxygen";
-  src: url("../assets/fonts/psycharegular-yq334.otf");
-  font-style: normal;
-  font-display: swap;
-
-  /* unicode-range: U+0020-007F; */
-}
-@font-face {
-  font-family: "OXY";
-  src: url("../assets/fonts/ThunderDemo.ttf");
+  font-family: "OXY2";
+  src: url("../../assets/fonts/pixelgamerpersonaluse-rg61l.otf");
   font-style: normal;
   font-display: swap;
 
   /* unicode-range: U+0020-007F; */
 }
 
-.Acapulco {
-  font-family: "OXY";
+.Koala {
+  font-family: "OXY2";
   background-image: repeating-linear-gradient(
     to left,
-    #f01197 0%,
-    #722ef1 10%,
+    #a2f011 0%,
+    #1cd24d 10%,
 
-    #4800f1 15%,
-    #3602f2 29%,
-    #c078f0 67%,
-    #de4b9c 100%
+    #0eb991 15%,
+    #02c6f2 29%,
+    #e0900f 67%,
+    #bae00f 100%
   );
   background-clip: border-box;
   background-size: 200% auto;
@@ -303,27 +280,6 @@ onMounted(() => {
   }
 }
 
-.OurWork {
-  font-family: "Oxygen";
-  background-image: repeating-linear-gradient(
-    to left,
-    #f01197 0%,
-    #722ef1 10%,
-
-    #4800f1 15%,
-    #3602f2 29%,
-    #c078f0 67%,
-    #de4b9c 100%
-  );
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 6s linear infinite;
-  display: inline-block;
-}
 .KeslerDiv:hover {
   cursor: pointer;
   filter: drop-shadow(1.8);
