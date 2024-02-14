@@ -79,9 +79,11 @@
         </h2>
         <h2 class="p-3 text-lg lg:text-xl text-gray-600">
           Immerse yourself in a world of cheeky charm and exclusive perks, all
-          while rocking a unique simian avatar. Join the troop and unlock
-          exciting experiences, from community events to exclusive merchandise –
-          the jungle awaits.
+          while rocking a unique simian avatar.
+        </h2>
+        <h2 class="p-3 text-lg lg:text-xl text-gray-600">
+          Join the troop and unlock exciting experiences, from community events
+          to exclusive merchandise – the jungle awaits.
         </h2>
       </div>
       <div class="h-auto lg:w-1/2 w-full flex items-start justify-center">
@@ -98,10 +100,43 @@
       </div>
     </div>
     <div
+      class="Monkey grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 place-items-center justify-items-center gap-1"
+    >
+      <div
+        class="relative lg:col-span-4 md:col-span-3 col-span-1 flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
+      >
+        <img
+          class="absolute thirdPic object-contain w-28"
+          src="../../assets/images/logo-second.webp"
+          alt=""
+        />
+        <img
+          class="absolute firstPic object-contain w-28"
+          src="../../assets/images/logo-third.webp"
+          alt=""
+        />
+        <img
+          class="absolute secondPic object-contain w-28"
+          src="../../assets/images/logo-forth.webp"
+          alt=""
+        />
+        <img
+          class="absolute forthPic object-contain w-28"
+          src="../../assets/images/logo-first.webp"
+          alt=""
+        />
+      </div>
+      <h2
+        class="text-5xl Acapulco lg:col-span-4 md:col-span-3 col-span-1 text-center"
+      >
+        Acapulco Presents...
+      </h2>
+    </div>
+    <div
       class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 space-y-28 justify-center"
     >
       <h2
-        class="lg:text-8xl text-6xl text-mainGreen bg-mainPurple border-4 border-mainPurple w-full p-1 OurWorks text-center"
+        class="lg:text-8xl text-6xl text-mainGreen bg-mainBlue w-full p-1 OurWorks text-center"
       >
         Our Team consists of :
       </h2>
@@ -177,34 +212,6 @@
           </a>
         </div>
       </div>
-      <h2 class="text-5xl Acapulco text-center">Acapulco Presents...</h2>
-    </div>
-    <div
-      class="Monkey grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 place-items-center justify-items-center gap-1"
-    ></div>
-    <div
-      class="relative flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
-    >
-      <img
-        class="absolute thirdPic object-contain w-44"
-        src="../../assets/images/logo-second.webp"
-        alt=""
-      />
-      <img
-        class="absolute firstPic object-contain w-44"
-        src="../../assets/images/logo-third.webp"
-        alt=""
-      />
-      <img
-        class="absolute secondPic object-contain w-44"
-        src="../../assets/images/logo-forth.webp"
-        alt=""
-      />
-      <img
-        class="absolute forthPic object-contain w-44"
-        src="../../assets/images/logo-first.webp"
-        alt=""
-      />
     </div>
   </div>
 </template>
@@ -315,7 +322,7 @@ onMounted(() => {
     #722ef1 10%,
 
     #4800f1 15%,
-    #3602f2 29%,
+    #0252f2 29%,
     #c078f0 67%,
     #de4b9c 100%
   );

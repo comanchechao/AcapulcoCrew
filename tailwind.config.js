@@ -68,7 +68,7 @@ module.exports = {
       darkPurple: "#150531",
       mainBlack: "#171717",
       mainRed: "#ff1654",
-      mainBlue: "#525ffd",
+      mainBlue: "#3602f2",
       // mainBrown: "#170800",
       mainYellow: "#fdbe39",
       mainOrange: "#fb6107",
