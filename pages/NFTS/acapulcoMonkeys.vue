@@ -8,7 +8,9 @@
     <div class="w-screen LoadingDiv h-screen flex items-center justify-center">
       <img src="../assets/images/Logo.gif" alt="" />
     </div>
-    <div class="w-screen h-28 Back px-24 flex items-center justify-between">
+    <div
+      class="w-screen h-28 Back px-4 lg:px-24 flex items-center justify-between"
+    >
       <NuxtLink to="/">
         <PhCaretCircleLeft
           class="bg-mainGreen cursor-pointer text-mainWhite hover:text-mainPurple active:text-mainGreen transition duration-300 ease-linear hover:bg-mainWhite rounded-full"
@@ -31,133 +33,178 @@
       class="h-auto mb-10 w-screen flex items-center justify-center px-10 lg:px-72"
     >
       <div
-        class="w-full flex panelContainer text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
+        class="w-full flex text-darkPurple flex-col items-center h-full bg-mainWhite rounded-md"
       >
         <h2
           :onmouseleave="endAnimation"
           :onmouseover="startAnimation"
-          class="text-4xl mb-4 italic Hi cursor-pointer"
+          class="lg:text-4xl text-2xl mb-4 italic Hi cursor-pointer"
         >
           Introducing
         </h2>
         <div class="flex lg:flex-row flex-col items-center lg:space-x-6">
-          <h2 class="text-9xl Acapulco text-center">Acapulco Monkeys</h2>
+          <h2 class="lg:text-9xl text-8xl Acapulco text-center">
+            Acapulco Monkeys
+          </h2>
         </div>
       </div>
     </div>
     <div class="w-full h-auto p-2 flex items-center flex-col justify-center">
       <h1
-        class="bg-mainGreen flex items-center justify-center space-x-2 w-full text-center p-3 text-4xl text-darkPurple Creative"
+        class="bg-mainGreen flex lg:flex-row flex-col items-center justify-center lg:space-x-2 w-full text-center p-3 text-3xl text-darkPurple Creative"
       >
         <span> Acapulco Monkeys is a NFT project based on </span>
         <span class="flex items-center space-x-2"
           ><span>SOLANA</span>
           <img
-            src="../assets/images/SOL.webp"
+            src="../../assets/images/SOL.webp"
             class="object-contain w-10"
             alt=""
         /></span>
       </h1>
     </div>
     <div
-      class="flex h-screen lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+      class="flex h-auto lg:px-20 lg:pt-16 lg:flex-row flex-col-reverse w-full justify-around items-start lg:space-y-0 space-y-5"
     >
       <div
-        class="h-full py-16 pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
+        class="h-auto lg:pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
       >
-        <h1 class="p-3 text-4xl text-darkPurple">
+        <h1 class="p-3 text-2xl lg:text-4xl text-gray-800">
           Dive into the Tropics🌴 with Acapulco Monkeys: Your Solana Powered NFT
           Gateway
         </h1>
-        <h2 class="p-3 text-xl text-darkPurple">
+        <h2 class="p-3 text-lg lg:text-xl text-gray-700">
           Get ready to unleash your inner primate with Acapulco Monkeys, a
           vibrant NFT collection on the Solana blockchain.
         </h2>
-        <h2 class="p-3 text-xl text-darkPurple">
+        <h2 class="p-3 text-lg lg:text-xl text-gray-600">
           Immerse yourself in a world of cheeky charm and exclusive perks, all
           while rocking a unique simian avatar. Join the troop and unlock
           exciting experiences, from community events to exclusive merchandise –
           the jungle awaits.
         </h2>
       </div>
-      <div class="h-full lg:w-1/2 w-full flex py-16 items-start justify-center">
-        <img
-          src="../assets/images/SHIRTS.webp"
-          class="h-dialog object-contain"
-          alt=""
-        />
+      <div class="h-auto lg:w-1/2 w-full flex items-start justify-center">
+        <a
+          class="border-8 hover:border-mainGreen shadow-lg shadow-transparent hover:shadow-mainGreen border-transparent cursor-pointer transition duration-300 ease-linear"
+          href="https://www.instagram.com/payamone/"
+        >
+          <img
+            src="../../assets/images/SHIRTS.webp"
+            class="lg:h-dialog h-auto object-contain panelContainer"
+            alt=""
+          />
+        </a>
       </div>
     </div>
+    <div
+      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 space-y-28 justify-center"
+    >
+      <h2
+        class="lg:text-8xl text-6xl text-mainGreen bg-mainPurple border-4 border-mainPurple w-full p-1 OurWorks text-center"
+      >
+        Our Team consists of :
+      </h2>
+      <div
+        class="flex h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+      >
+        <div
+          class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
+        >
+          <a
+            href="https://instagram.com/famousKesler/"
+            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+          >
+            <img
+              class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
+              src="../../assets/images/Kesler.webp"
+              alt=""
+            />
+            <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
+              Kesler
+            </h1>
+            <h3
+              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+            >
+              Digital Artist
+            </h3>
+          </a>
+        </div>
+        <div
+          class="flex flex-col ChaoDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
+        >
+          <a
+            href="https://instagram.com/comanchechao/"
+            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+          >
+            <img
+              class="w-72 object-contain Chao cursor-pointer"
+              src="../../assets/images/Chao.webp"
+              alt=""
+            />
+            <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
+              Chao
+            </h1>
+            <h3
+              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+            >
+              FullStack Developer
+            </h3>
+          </a>
+        </div>
+        <div
+          class="flex flex-col GreezDiv w-full lg:w-1/3 h-full justify-center items-center"
+        >
+          <a
+            href="https://instagram.com/lemon_greez"
+            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+          >
+            <img
+              class="w-72 object-contain Greez cursor-pointer"
+              src="../../assets/images/Greez.webp"
+              alt=""
+            />
+            <h1
+              class="Acapulco font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+            >
+              Greez
+            </h1>
+            <h3
+              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+            >
+              FullStack Developer
+            </h3>
+          </a>
+        </div>
+      </div>
+      <h2 class="text-5xl Acapulco text-center">Acapulco Presents...</h2>
+    </div>
+    <div
+      class="Monkey grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 place-items-center justify-items-center gap-1"
+    ></div>
     <div
       class="relative flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
     >
       <img
         class="absolute thirdPic object-contain w-44"
-        src="../assets/images/logo-second.webp"
+        src="../../assets/images/logo-second.webp"
         alt=""
       />
       <img
         class="absolute firstPic object-contain w-44"
-        src="../assets/images/logo-third.webp"
+        src="../../assets/images/logo-third.webp"
         alt=""
       />
       <img
         class="absolute secondPic object-contain w-44"
-        src="../assets/images/logo-forth.webp"
+        src="../../assets/images/logo-forth.webp"
         alt=""
       />
       <img
         class="absolute forthPic object-contain w-44"
-        src="../assets/images/logo-first.webp"
+        src="../../assets/images/logo-first.webp"
         alt=""
       />
-    </div>
-    <div
-      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-24 space-y-28 justify-center"
-    >
-      <h2 class="lg:text-8xl text-6xl OurWork text-center">Our Work :</h2>
-      <div
-        class="h-full w-full flex lg:space-y-0 space-y-6 lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
-      >
-        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
-          Acapulco Design
-        </h2>
-        <div
-          class="lg:w-1/2 w-full h-72 flex items-center justify-center bg-mainRed rounded-md"
-        >
-          <img src="../assets/images/Logo.gif" alt="" />
-        </div>
-      </div>
-      <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
-      >
-        <div class="lg:w-1/2 w-full h-72 bg-mainGreen rounded-md"></div>
-        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
-          Hocus Pocus
-        </h2>
-      </div>
-      <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
-      >
-        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
-          Greez EyeWear
-        </h2>
-        <div class="lg:w-1/2 w-full h-72 bg-mainPurple rounded-md"></div>
-      </div>
-      <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
-      >
-        <div class="lg:w-1/2 w-full h-72 bg-mainYellow rounded-md"></div>
-        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">Boutak</h2>
-      </div>
-      <div
-        class="h-full w-full flex lg:flex-row flex-col items-center justify-around lg:px-24 px-8 my-10"
-      >
-        <h2 class="text-6xl lg:w-1/2 w-full text-center font-bold">
-          Punkey Monkey
-        </h2>
-        <div class="lg:w-1/2 w-full h-72 bg-mainPink rounded-md"></div>
-      </div>
     </div>
   </div>
 </template>
@@ -242,7 +289,7 @@ onMounted(() => {
 });
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: "Oxygen";
   src: url("../assets/fonts/psycharegular-yq334.otf");
@@ -288,26 +335,8 @@ onMounted(() => {
   }
 }
 
-.OurWork {
+.OurWorks {
   font-family: "Oxygen";
-  background-image: repeating-linear-gradient(
-    to left,
-    #f01197 0%,
-    #722ef1 10%,
-
-    #4800f1 15%,
-    #3602f2 29%,
-    #c078f0 67%,
-    #de4b9c 100%
-  );
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 6s linear infinite;
-  display: inline-block;
 }
 .KeslerDiv:hover {
   cursor: pointer;
