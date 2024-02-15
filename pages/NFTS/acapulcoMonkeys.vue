@@ -43,13 +43,18 @@
           Introducing
         </h2>
         <div class="flex lg:flex-row flex-col items-center lg:space-x-6">
-          <h2 class="lg:text-9xl text-8xl Acapulco text-center">
+          <h2 class="lg:text-9xl text-8xl SectionTrigger Acapulco text-center">
             Acapulco Monkeys
           </h2>
         </div>
       </div>
     </div>
     <div class="w-full h-auto p-2 flex items-center flex-col justify-center">
+      <img
+        src="../../assets/images/MonkMain.webp"
+        class="w-48 object-contain Monke"
+        alt=""
+      />
       <h1
         class="bg-mainGreen flex lg:flex-row flex-col items-center justify-center lg:space-x-2 w-full text-center p-3 text-3xl text-darkPurple Creative"
       >
@@ -64,7 +69,7 @@
       </h1>
     </div>
     <div
-      class="flex h-auto lg:px-20 lg:pt-16 lg:flex-row flex-col-reverse w-full justify-around items-start lg:space-y-0 space-y-5"
+      class="flex SectionDiv h-auto lg:px-20 lg:pt-16 lg:flex-row flex-col-reverse w-full justify-around items-start lg:space-y-0 space-y-5"
     >
       <div
         class="h-auto lg:pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
@@ -85,6 +90,12 @@
           Join the troop and unlock exciting experiences, from community events
           to exclusive merchandise – the jungle awaits.
         </h2>
+        <button
+          @click="StartExam"
+          class="px-10 py-2 rounded-full bg-mainGreen text-mainBlack text-xl transition ease-in duration-300 hover:bg-mainWhite shadow-md shadow-transparent hover:shadow-mainGreen"
+        >
+          Explore
+        </button>
       </div>
       <div class="h-auto lg:w-1/2 w-full flex items-start justify-center">
         <a
@@ -127,10 +138,28 @@
         />
       </div>
       <h2
-        class="text-5xl Acapulco lg:col-span-4 md:col-span-3 col-span-1 text-center"
+        id="Present"
+        class="text-5xl mb-11 Acapulco lg:col-span-4 md:col-span-3 col-span-1 text-center"
       >
         Acapulco Presents...
       </h2>
+      <img
+        src="../../assets/images/Monkey1.webp"
+        class="w-72 object-contain"
+        alt=""
+      /><img
+        src="../../assets/images/Monkey1.webp"
+        class="w-72 object-contain"
+        alt=""
+      /><img
+        src="../../assets/images/Monkey1.webp"
+        class="w-72 object-contain"
+        alt=""
+      /><img
+        src="../../assets/images/Monkey1.webp"
+        class="w-72 object-contain"
+        alt=""
+      />
     </div>
     <div
       class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 space-y-28 justify-center"
@@ -219,23 +248,35 @@
 <script setup>
 import { PhCaretCircleLeft } from "@phosphor-icons/vue";
 
-import { gsap } from "gsap";
+const { $gsap } = useNuxtApp();
 
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
 const startAnimation1 = () => {
-  gsap.to(".img", { rotation: 360, ease: "Linear.easeNone", duration: 0.2 });
+  $gsap.to(".img", { rotation: 360, ease: "Linear.easeNone", duration: 0.2 });
 };
 const endAnimation1 = () => {
-  gsap.to(".img", { rotation: 0, ease: "Linear.easeNone", duration: 0.2 });
+  $gsap.to(".img", { rotation: 0, ease: "Linear.easeNone", duration: 0.2 });
 };
 const startAnimation = () => {
-  gsap.to(".Hi", { x: 27, ease: "Linear.easeNone", duration: 0.2 });
+  $gsap.to(".Hi", { x: 27, ease: "Linear.easeNone", duration: 0.2 });
 };
 const endAnimation = () => {
-  gsap.to(".Hi", { x: 0, ease: "Linear.easeNone", duration: 0.2 });
+  $gsap.to(".Hi", { x: 0, ease: "Linear.easeNone", duration: 0.2 });
 };
+
+const StartExam = () => {
+  $gsap.to(window, {
+    duration: 1,
+    scrollTo: {
+      y: "#Present",
+      autoKill: false,
+    },
+    ease: "power4.out",
+  });
+};
+
 onMounted(() => {
-  const TL = gsap.timeline();
+  const TL = $gsap.timeline();
   TL.to(".LoadingDiv", {
     display: "none",
   });
@@ -252,24 +293,38 @@ onMounted(() => {
     duration: 0.6,
     delay: 0.2,
   });
-  TL.from(".We", {
-    x: -50,
-    opacity: 0,
-    ease: "Linear.easeNone",
-    duration: 0.3,
-  });
+
   TL.from(".Acapulco", {
     y: 50,
     opacity: 0,
     ease: "Linear.easeNone",
     duration: 0.5,
   });
+
   TL.from(".Creative", {
     opacity: 0,
     ease: "Linear.easeNone",
+    duration: 0.3,
+  });
+  TL.from(".Monke", {
+    opacity: 0,
+    y: 30,
+    ease: "Linear.easeNone",
     duration: 0.5,
   });
-  gsap.from(".logo", {
+  $gsap.from(".SectionDiv", {
+    scale: 0.7,
+    y: -100,
+    duration: 0.2,
+    ease: "expo.out",
+    scrollTrigger: {
+      start: "top bottom",
+      end: "bottom bottom",
+      scrub: 0.5,
+      trigger: ".SectionTrigger",
+    },
+  });
+  $gsap.from(".logo", {
     rotation: 360 * 7,
     duration: 0.2,
     ease: "expo.out",
@@ -280,7 +335,7 @@ onMounted(() => {
       trigger: ".panelContainer",
     },
   });
-  // gsap.from(".OurWork", {
+  // $gsap.from(".OurWork", {
   //   opacity: 0,
   //   y: 60,
   //   duration: 1,

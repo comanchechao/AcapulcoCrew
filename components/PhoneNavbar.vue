@@ -54,14 +54,14 @@
           </div>
           <ul
             tabindex="0"
-            class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-52"
+            class="dropdown-content z-[1] menu text-xl border-4 border-mainGreen bg-mainWhite text-darkPurple rounded-sm w-56"
           >
             <li>
               <NuxtLink to="/nfts/acapulcoKoalas">Acapulco Koalas</NuxtLink>
             </li>
 
             <li>
-              <NuxtLink to="/nfts/acapulcoMonkeys">Acapulco Koalas</NuxtLink>
+              <NuxtLink to="/nfts/acapulcoMonkeys">Acapulco Monkeys</NuxtLink>
             </li>
           </ul>
         </div>
