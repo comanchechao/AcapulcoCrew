@@ -69,7 +69,7 @@
       </h1>
     </div>
     <div
-      class="flex SectionDiv h-auto lg:px-20 lg:pt-16 lg:flex-row flex-col-reverse w-full justify-around items-start lg:space-y-0 space-y-5"
+      class="flex SectionDiv h-auto lg:px-20 lg:pt-16 lg:flex-row px-2 flex-col-reverse w-full justify-around items-start lg:space-y-0 space-y-5"
     >
       <div
         class="h-auto lg:pl-24 lg:w-1/2 flex-col w-full flex items-start justify-start"
@@ -104,14 +104,14 @@
         >
           <img
             src="../../assets/images/SHIRTS.webp"
-            class="lg:h-dialog h-auto object-contain panelContainer"
+            class="lg:h-dialog h-auto object-contain Monkey1T panelContainer"
             alt=""
           />
         </a>
       </div>
     </div>
     <div
-      class="Monkey grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 place-items-center justify-items-center gap-1"
+      class="Monkey grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 place-items-center justify-items-center gap-5 lg:gap-1"
     >
       <div
         class="relative lg:col-span-4 md:col-span-3 col-span-1 flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
@@ -145,19 +145,19 @@
       </h2>
       <img
         src="../../assets/images/Monkey1.webp"
-        class="w-72 object-contain"
+        class="w-72 object-contain Monkey1 TEAMT"
         alt=""
       /><img
-        src="../../assets/images/Monkey1.webp"
-        class="w-72 object-contain"
+        src="../../assets/images/Monkey2.webp"
+        class="w-72 object-contain Monkey1"
         alt=""
       /><img
-        src="../../assets/images/Monkey1.webp"
-        class="w-72 object-contain"
+        src="../../assets/images/Monkey3.webp"
+        class="w-72 object-contain Monkey1"
         alt=""
       /><img
-        src="../../assets/images/Monkey1.webp"
-        class="w-72 object-contain"
+        src="../../assets/images/Monkey4.webp"
+        class="w-72 object-contain Monkey1"
         alt=""
       />
     </div>
@@ -170,27 +170,39 @@
         Our Team consists of :
       </h2>
       <div
-        class="flex h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+        class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
       >
         <div
           class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
         >
           <a
             href="https://instagram.com/famousKesler/"
-            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+            class="flex flex-col justify-center items-center"
           >
             <img
               class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
               src="../../assets/images/Kesler.webp"
               alt=""
             />
-            <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
+            <h1
+              class="Acapulco my-3 font-black text-3xl lg:text-5xl text-mainBlue"
+            >
               Kesler
             </h1>
             <h3
-              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
             >
               Digital Artist
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
+            >
+              NFT Artist
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
+            >
+              Graffiti Writer
             </h3>
           </a>
         </div>
@@ -199,20 +211,30 @@
         >
           <a
             href="https://instagram.com/comanchechao/"
-            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+            class="flex flex-col justify-center items-center"
           >
             <img
               class="w-72 object-contain Chao cursor-pointer"
               src="../../assets/images/Chao.webp"
               alt=""
             />
-            <h1 class="Acapulco font-black text-3xl lg:text-5xl text-mainBlue">
+            <h1
+              class="Acapulco my-3 font-black text-3xl lg:text-5xl text-mainBlue"
+            >
               Chao
             </h1>
             <h3
-              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+            >
+              Web3 Developer
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
             >
               FullStack Developer
+            </h3>
+            <h3 class="text-sm lg:text-lg text-mainPurple text-opacity-60">
+              <span class="FONTT font-bold">UI/UX</span>
             </h3>
           </a>
         </div>
@@ -221,7 +243,7 @@
         >
           <a
             href="https://instagram.com/lemon_greez"
-            class="flex flex-col justify-center items-center space-y-2 lg:space-y-4"
+            class="flex flex-col justify-center items-center"
           >
             <img
               class="w-72 object-contain Greez cursor-pointer"
@@ -229,14 +251,24 @@
               alt=""
             />
             <h1
-              class="Acapulco font-black my-4 text-3xl lg:text-5xl text-mainBlue"
+              class="Acapulco my-3 font-black text-3xl lg:text-5xl text-mainBlue"
             >
               Greez
             </h1>
             <h3
-              class="font-mainFont underline font-extralight text-3xl lg:text-4xl text-mainPurple"
+              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+            >
+              Web3 Developer
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
             >
               FullStack Developer
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
+            >
+              Web Security
             </h3>
           </a>
         </div>
@@ -324,6 +356,32 @@ onMounted(() => {
       trigger: ".SectionTrigger",
     },
   });
+  $gsap.from(".TEAM", {
+    scale: 0.7,
+    y: -100,
+    duration: 0.2,
+    ease: "expo.out",
+    scrollTrigger: {
+      start: "top bottom",
+      end: "bottom bottom",
+      scrub: 0.5,
+      trigger: ".TEAMT",
+    },
+  });
+  $gsap.from(".Monkey1", {
+    scale: 0.9,
+    opacity: 0,
+    stagger: 0.2,
+    x: 100,
+    duration: 0.8,
+    ease: "expo.out",
+    scrollTrigger: {
+      start: "top center",
+      end: "bottom bottom",
+      trigger: ".Monkey1T",
+      toggleActions: "play none none reverse",
+    },
+  });
   $gsap.from(".logo", {
     rotation: 360 * 7,
     duration: 0.2,
@@ -367,6 +425,18 @@ onMounted(() => {
   font-display: swap;
 
   /* unicode-range: U+0020-007F; */
+}
+@font-face {
+  font-family: "MAG";
+  src: url("../assets/fonts/MagilioRegular-Yzv2O.ttf");
+  font-style: normal;
+  font-display: swap;
+
+  /* unicode-range: U+0020-007F; */
+}
+
+.FONTT {
+  font-family: "MAG ";
 }
 
 .Acapulco {
