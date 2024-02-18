@@ -165,7 +165,7 @@
       class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 justify-start lg:justify-center"
     >
       <h2
-        class="lg:text-8xl text-6xl lg:my-9 my-10 text-mainGreen bg-mainBlue w-full p-1 OurWorks text-center"
+        class="lg:text-8xl text-6xl lg:my-9 lg:mb-20 my-10 text-mainGreen bg-mainBlue w-full p-1 OurWorks text-center"
       >
         Our Team consists of :
       </h2>
