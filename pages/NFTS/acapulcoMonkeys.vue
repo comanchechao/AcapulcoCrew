@@ -460,17 +460,9 @@ onMounted(() => {
 
   /* unicode-range: U+0020-007F; */
 }
-@font-face {
-  font-family: "MAG";
-  src: url("../../assets/fonts/MagilioRegular-Yzv2O.ttf");
-  font-style: normal;
-  font-display: swap;
-
-  /* unicode-range: U+0020-007F; */
-}
 
 .FONTT {
-  font-family: "MAG ";
+  font-family: "OXY ";
 }
 
 .Acapulco {
