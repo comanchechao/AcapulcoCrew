@@ -162,15 +162,15 @@
       />
     </div>
     <div
-      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 space-y-28 justify-center"
+      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 justify-start lg:justify-center"
     >
       <h2
-        class="lg:text-8xl text-6xl text-mainGreen bg-mainBlue w-full p-1 OurWorks text-center"
+        class="lg:text-8xl text-6xl lg:my-9 my-10 text-mainGreen bg-mainBlue w-full p-1 OurWorks text-center"
       >
         Our Team consists of :
       </h2>
       <div
-        class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-around items-center lg:space-y-0 space-y-5"
+        class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-start items-start lg:items-center lg:space-y-0 space-y-5"
       >
         <div
           class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"
@@ -190,7 +190,7 @@
               Kesler
             </h1>
             <h3
-              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+              class="font-mainFont font-extralight text-xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
             >
               Digital Artist
             </h3>
@@ -224,7 +224,7 @@
               Chao
             </h1>
             <h3
-              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+              class="font-mainFont font-extralight text-xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
             >
               Web3 Developer
             </h3>
@@ -256,7 +256,7 @@
               Greez
             </h1>
             <h3
-              class="font-mainFont font-extralight text-3xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+              class="font-mainFont font-extralight text-xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
             >
               Web3 Developer
             </h3>
@@ -269,6 +269,40 @@
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
             >
               Web Security
+            </h3>
+          </a>
+        </div>
+        <div
+          class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center"
+        >
+          <a
+            href="https://instagram.com/famousKesler/"
+            class="flex flex-col justify-center items-center"
+          >
+            <img
+              class="w-72 object-contain Kesler cursor-pointer lg:mb-4"
+              src="../../assets/images/Heller.webp"
+              alt=""
+            />
+            <h1
+              class="Acapulco mb-3 font-black text-3xl lg:text-5xl text-mainBlue"
+            >
+              Heller
+            </h1>
+            <h3
+              class="font-mainFont font-extralight text-xl lg:text-2xl text-mainGreen bg-mainPurple px-9 p-2 rounded-full"
+            >
+              Marketing Expert
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
+            >
+              Sales Manager
+            </h3>
+            <h3
+              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
+            >
+              Web3 Producer
             </h3>
           </a>
         </div>
@@ -412,7 +446,7 @@ onMounted(() => {
 <style scoped>
 @font-face {
   font-family: "Oxygen";
-  src: url("../assets/fonts/psycharegular-yq334.otf");
+  src: url("../../assets/fonts/psycharegular-yq334.otf");
   font-style: normal;
   font-display: swap;
 
@@ -420,7 +454,7 @@ onMounted(() => {
 }
 @font-face {
   font-family: "OXY";
-  src: url("../assets/fonts/ThunderDemo.ttf");
+  src: url("../../assets/fonts/ThunderDemo.ttf");
   font-style: normal;
   font-display: swap;
 
@@ -428,7 +462,7 @@ onMounted(() => {
 }
 @font-face {
   font-family: "MAG";
-  src: url("../assets/fonts/MagilioRegular-Yzv2O.ttf");
+  src: url("../../assets/fonts/MagilioRegular-Yzv2O.ttf");
   font-style: normal;
   font-display: swap;
 
