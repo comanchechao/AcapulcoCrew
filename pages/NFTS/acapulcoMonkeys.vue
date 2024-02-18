@@ -234,7 +234,7 @@
               FullStack Developer
             </h3>
             <h3 class="text-sm lg:text-lg text-mainPurple text-opacity-60">
-              <span class="FONTT font-bold">UI/UX</span>
+              UI<span class="font-serif">/</span>UX
             </h3>
           </a>
         </div>
