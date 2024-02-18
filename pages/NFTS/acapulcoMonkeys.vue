@@ -461,10 +461,6 @@ onMounted(() => {
   /* unicode-range: U+0020-007F; */
 }
 
-.FONTT {
-  font-family: "OXY ";
-}
-
 .Acapulco {
   font-family: "OXY";
   background-image: repeating-linear-gradient(
