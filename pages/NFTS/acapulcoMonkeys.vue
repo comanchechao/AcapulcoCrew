@@ -276,7 +276,7 @@
           class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center"
         >
           <a
-            href="https://instagram.com/famousKesler/"
+            href="https://instagram.com/hellerkoalas/"
             class="flex flex-col justify-center items-center"
           >
             <img
@@ -297,7 +297,7 @@
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
             >
-              Sales Manager
+              NFT Collector
             </h3>
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
