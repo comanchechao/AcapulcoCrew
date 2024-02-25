@@ -170,7 +170,7 @@
         Our Team consists of :
       </h2>
       <div
-        class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-start items-start lg:items-center lg:space-y-0 space-y-5"
+        class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-start items-start lg:items-center lg:space-y-0 space-y-10"
       >
         <div
           class="flex flex-col KeslerDiv w-full lg:w-1/3 h-full justify-start items-center space-y-2"

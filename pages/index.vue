@@ -37,15 +37,16 @@
         We are a Creative Team with an Eye for
         <span class="OurWork">Color</span>
       </h1>
-      <h1 class="p-3 text-5xl text-darkPurple">
-        Our team consists of two
+      <h1 class="p-3 lg:px-32 text-5xl text-darkPurple">
+        Our team consists of a
+        <span class="text-mainPurple underline">Marketing Expert</span> two
         <span class="text-mainPurple underline">FullStack Developers</span> and
         a
         <span class="text-mainPurple underline">Digital Artist</span>
       </h1>
     </div>
     <div
-      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-3 lg:my-24 justify-start lg:justify-center"
+      class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full justify-start lg:justify-center"
     >
       <div
         class="flex TEAM h-full lg:px-20 lg:flex-row flex-col w-full justify-start items-start lg:items-center lg:space-y-0 space-y-5"
