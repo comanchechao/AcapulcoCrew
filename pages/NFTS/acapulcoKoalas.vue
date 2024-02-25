@@ -22,11 +22,13 @@
         :onmouseover="startAnimation1"
         :onmouseleave="endAnimation1"
       >
-        <img
-          src="../../assets/images/Logo.webp"
-          class="lg:w-24 w-20 object-contain cursor-pointer"
-          alt=""
-        />
+        <NuxtLink to="/nfts/acapulcoMonkeys">
+          <img
+            src="../../assets/images/Logo.webp"
+            class="lg:w-24 w-20 object-contain cursor-pointer"
+            alt=""
+          />
+        </NuxtLink>
       </div>
     </div>
     <div
@@ -393,7 +395,6 @@ onMounted(() => {
     display: "none",
   });
   TL.from(".Back", {
-    x: -50,
     opacity: 0,
     ease: "Linear.easeNone",
     duration: 0.5,

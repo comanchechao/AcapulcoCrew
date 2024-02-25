@@ -22,11 +22,13 @@
         :onmouseover="startAnimation1"
         :onmouseleave="endAnimation1"
       >
-        <img
-          src="../../assets/images/Logo.webp"
-          class="lg:w-24 w-20 object-contain cursor-pointer"
-          alt=""
-        />
+        <NuxtLink to="/nfts/acapulcoKoalas">
+          <img
+            src="../../assets/images/Logo.webp"
+            class="lg:w-24 w-20 object-contain cursor-pointer"
+            alt=""
+          />
+        </NuxtLink>
       </div>
     </div>
     <div
