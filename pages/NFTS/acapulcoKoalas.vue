@@ -329,32 +329,28 @@
       <div
         class="flex lg:absolute transform lg:translate-y-60 items-center justify-center space-x-2"
       >
-        <a href="https://www.instagram.com/hellerkoalas/">
+        <a href="https://www.instagram.com/acapulcoCrew/">
           <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
+            class="text-mainRed cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainRed hover:text-mainWhite rounded-full"
           >
             <PhInstagramLogo :size="66" weight="fill" />
           </button>
         </a>
-        <a href="https://twitter.com/Hellerkoalas/">
+        <a href="https://twitter.com/acapulcoMonkeys/">
           <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
+            class="text-LightBlue-400 cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-LightBlue-400 hover:text-mainWhite rounded-full"
           >
             <PhTwitterLogo :size="66" weight="fill" />
           </button>
         </a>
+        <a href="https://discord.gg/v7E5SC35VF/">
         <button
-          class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
+          class="     text-LightBlue-700 cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-blue-500 hover:text-mainWhite rounded-full"
         >
-          <PhTelegramLogo :size="66" weight="fill" />
+          <PhDiscordLogo :size="66" weight="fill" />
         </button>
-        <a>
-          <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
-          >
-            <PhWhatsappLogo :size="66" weight="fill" />
-          </button>
-        </a>
+    </a>
+
       </div>
       <img
         src="../../assets/images/Footer.webp"
@@ -370,7 +366,7 @@ import { PhCaretCircleLeft } from "@phosphor-icons/vue";
 import {
   PhWhatsappLogo,
   PhInstagramLogo,
-  PhTelegramLogo,
+  PhDiscordLogo,
   PhMapPin,
   PhTwitterLogo,
 } from "@phosphor-icons/vue";
