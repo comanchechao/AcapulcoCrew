@@ -37,7 +37,7 @@
         We are a Creative Team with an Eye for
         <span class="OurWork">Color</span>
       </h1>
-      <h1 class="p-3 justify-center items-center   text-5xl text-darkPurple">
+      <h1 class="p-3 justify-center my-5 items-center   text-5xl text-darkPurple">
         Our team consists of a
         <span class="text-mainPurple underline">Marketing Expert</span> two
         <span class="text-mainPurple underline">FullStack Developers</span> and
@@ -110,10 +110,10 @@
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
             >
-              FullStack Developer
+              Graphic Designer  
             </h3>
             <h3 class="text-sm lg:text-lg text-mainPurple text-opacity-60">
-              UI<span class="font-serif">/</span>UX
+              UI<span class="font-serif">/</span>UX Expert
             </h3>
           </a>
         </div>
@@ -139,15 +139,11 @@
             >
               Web3 Developer
             </h3>
-            <h3
-              class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
-            >
-              FullStack Developer
-            </h3>
+            
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
             >
-              Web Security
+                Security Expert
             </h3>
           </a>
         </div>
