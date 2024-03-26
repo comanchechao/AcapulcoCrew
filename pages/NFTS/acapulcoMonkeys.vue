@@ -310,63 +310,13 @@
         </div>
       </div>
     </div>
-    <div
-      class="flex items-center relative h-full flex-col justify-start w-full"
-    >
-      <h2
-        class="lg:text-5xl text-3xl mt-28 lg:absolute text-mainBlack px-7 lg:border-b-8 pb-2 border-mainGreen lg:w-textArea lg:px-16 text-center"
-      >
-        To learn more about the project<span class="font-serif">'</span>s goals,
-        timeline, and team, feel free to contact us.
-      </h2>
-      <div
-        class="flex lg:absolute transform lg:translate-y-60 items-center justify-center space-x-2"
-      >
-        <a href="https://www.instagram.com/hellerkoalas/">
-          <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
-          >
-            <PhInstagramLogo :size="66" weight="fill" />
-          </button>
-        </a>
-        <a href="https://twitter.com/Hellerkoalas/">
-          <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
-          >
-            <PhTwitterLogo :size="66" weight="fill" />
-          </button>
-        </a>
-        <button
-          class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
-        >
-          <PhTelegramLogo :size="66" weight="fill" />
-        </button>
-        <a>
-          <button
-            class="text-mainGreen cursor-pointer transition ease-in-out duration-150 p-2 hover:bg-mainGreen hover:text-mainWhite rounded-full"
-          >
-            <PhWhatsappLogo :size="66" weight="fill" />
-          </button>
-        </a>
-      </div>
-      <img
-        src="../../assets/images/Footer.webp"
-        class="w-screen object-cover"
-        alt=""
-      />
-    </div>
+   <LazyFooter />
   </div>
 </template>
 
 <script setup>
-import { PhCaretCircleLeft, PhTwitterLogo } from "@phosphor-icons/vue";
-import {
-  PhWhatsappLogo,
-  PhInstagramLogo,
-  PhTelegramLogo,
-  PhMapPin,
-  PhPhoneCall,
-} from "@phosphor-icons/vue";
+import { PhCaretCircleLeft } from "@phosphor-icons/vue";
+ 
 const { $gsap } = useNuxtApp();
 
 import { onMounted, ref } from "vue";

@@ -30,14 +30,14 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-auto p-10 flex items-center flex-col justify-center">
+    <div class="w-full h-auto lg:px-60   flex items-center flex-col justify-center">
       <h1
         class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
       >
         We are a Creative Team with an Eye for
         <span class="OurWork">Color</span>
       </h1>
-      <h1 class="p-3 lg:px-32 text-5xl text-darkPurple">
+      <h1 class="p-3 justify-center items-center   text-5xl text-darkPurple">
         Our team consists of a
         <span class="text-mainPurple underline">Marketing Expert</span> two
         <span class="text-mainPurple underline">FullStack Developers</span> and
@@ -211,6 +211,8 @@
         alt=""
       />
     </div>
+    <LazyFooter />
+
     <!-- <div
       class="flex flex-col WorkTrigger items-center text-darkPurple h-full w-full my-24 space-y-28 justify-center"
     >
