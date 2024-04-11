@@ -30,14 +30,16 @@
         </div>
       </div>
     </div>
-    <div class="w-full h-auto lg:px-60   flex items-center flex-col justify-center">
+    <div
+      class="w-full h-auto lg:px-60 flex items-center flex-col justify-center"
+    >
       <h1
         class="bg-mainGreen text-center p-3 text-6xl text-darkPurple Creative"
       >
         We are a Creative Team with an Eye for
         <span class="OurWork">Color</span>
       </h1>
-      <h1 class="p-3 justify-center my-5 items-center   text-5xl text-darkPurple">
+      <h1 class="p-3 justify-center my-5 items-center text-5xl text-darkPurple">
         Our team consists of a
         <span class="text-mainPurple underline">Marketing Expert</span> two
         <span class="text-mainPurple underline">FullStack Developers</span> and
@@ -110,7 +112,7 @@
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-70"
             >
-              Graphic Designer  
+              Graphic Designer
             </h3>
             <h3 class="text-sm lg:text-lg text-mainPurple text-opacity-60">
               UI<span class="font-serif">/</span>UX Expert
@@ -139,11 +141,11 @@
             >
               Web3 Developer
             </h3>
-            
+
             <h3
               class="font-mainFont font-extralight text-sm lg:text-lg text-mainPurple text-opacity-60"
             >
-                Security Expert
+              Security Expert
             </h3>
           </a>
         </div>
@@ -182,6 +184,7 @@
           </a>
         </div>
       </div>
+      <Animate />
     </div>
     <div
       class="relative flex h-44 mt-12 w-screen justify-center items-center NavbarTrigger logo"
